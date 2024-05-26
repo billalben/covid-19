@@ -344,6 +344,43 @@ body.active {
 }
 
 /* ===== #SERVICE ===== */
+.service {
+  text-align: center;
+}
+.service-list {
+  display: grid;
+  gap: 10px;
+}
+.service-card {
+  background-color: var(--oxford-blue_50);
+  padding: 20px;
+  border-radius: var(--radius-6);
+  transition: var(--transition-1);
+}
+.service-card .card-banner {
+  max-width: max-content;
+  margin-inline: auto;
+  border-radius: var(--radius-circle);
+}
+.service-card .card-banner img {
+  width: 95px;
+}
+.service-card .card-title {
+  margin-block: 20px 5px;
+}
+.service-card :is(.card-title, .card-text) {
+  transition: var(--transition-1);
+}
+.service-card:hover {
+  background-color: var(--white);
+  transform: translateY(-5px);
+}
+.service-card:hover .card-title {
+  color: var(--black);
+}
+.service-card:hover .card-text {
+  color: var(--dim-gray);
+}
 
 /* ===== #DOCTOR ===== */
 
