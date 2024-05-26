@@ -315,6 +315,33 @@ body.active {
 }
 
 /* ===== #ABOUT ===== */
+.about .container {
+  display: grid;
+  gap: 30px;
+}
+.about-subtitle {
+  font-size: var(--fs-4);
+  color: var(--medium-spring-green);
+}
+.about .section-text {
+  margin-block: 8px 15px;
+}
+.about-list {
+  margin-block-start: 30px;
+}
+.about-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-block: 15px;
+}
+.about .item-img {
+  flex-shrink: 0;
+  border-radius: var(--radius-circle);
+}
+.about .item-title {
+  margin-block-end: 5px;
+}
 
 /* ===== #SERVICE ===== */
 
