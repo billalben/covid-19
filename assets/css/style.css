@@ -181,7 +181,7 @@ body.active {
   object-fit: cover;
   transition: var(--transition-2);
 }
-figure {
+figure:not(.img-holder) {
   overflow: hidden;
   padding: 21px;
 }
