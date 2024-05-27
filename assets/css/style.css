@@ -485,6 +485,41 @@ doctor :is(.section-title, .section-text) {
 }
 
 /* ===== #BLOG ===== */
+.blog {
+  background-color: var(--indigo-dye);
+}
+.blog :is(.section-title, .section-text) {
+  text-align: center;
+}
+.blog-card {
+  border-radius: var(--radius-6);
+  overflow: hidden;
+}
+.blog-card :is(.card-content, .card-footer) {
+  background-color: var(--prussian-blue);
+  padding: 20px;
+}
+.blog-card .card-title {
+  transition: var(--transition-1);
+}
+.blog-card .card-title:is(:hover, :focus) {
+  color: var(--winter-sky);
+}
+.blog-card .card-meta {
+  margin-block: 15px;
+}
+.blog-card .card-meta .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-block: 2px;
+}
+.blog-card .card-footer {
+  border-block-start: 1px solid var(--cultured_20);
+}
+.btn-link {
+  font-weight: var(--fw-700);
+}
 
 /* ===== #FOOTER ===== */
 
