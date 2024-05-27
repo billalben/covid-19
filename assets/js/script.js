@@ -28,15 +28,19 @@ const toggleNavbar = () => {
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
 /**
- * Activate header & back-to-top button when window scrolls down to 200px
+ * Activate header when window scrolls down to 200px
  */
 const header = document.querySelector("[data-header]");
-const backTopBtn = document.querySelector("[data-back-top-btn]");
 
 const activeElemOnScroll = () => {
-  const isActive = window.scrollY > 200;
-  header.classList.toggle("active", isActive);
-  backTopBtn.classList.toggle("active", isActive);
+  header.classList.toggle("active", window.scrollY > 200);
 };
 
 window.addEventListener("scroll", activeElemOnScroll);
+
+/**
+ * Dynamic year in footer
+ */
+
+const year = new Date().getFullYear();
+document.querySelector("[data-footer-year]").textContent = year;
