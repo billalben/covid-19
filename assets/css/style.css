@@ -404,6 +404,50 @@ figure:not(.img-holder) {
 }
 
 /* ===== #DOCTOR ===== */
+doctor :is(.section-title, .section-text) {
+  text-align: center;
+}
+.doctor-card {
+  background-color: var(--oxford-blue_70);
+  border-radius: var(--radius-6);
+}
+.doctor-card:is(:hover, :focus-within) .img-cover {
+  transform: scale(1.05);
+}
+.doctor-card .img-holder {
+  border-radius: var(--radius-6) var(--radius-6) 0 0;
+}
+.doctor-card .card-content {
+  padding: 20px;
+}
+.doctor-card .card-subtitle {
+  margin-block: 5px 10px;
+}
+.doctor-card .card-text {
+  border-block-start: 1px solid var(--cultured_20);
+  padding-block-start: 15px;
+  margin-block-end: 20px;
+}
+.doctor-card .card-item {
+  border: 1px solid var(--cultured_20);
+  display: flex;
+  align-items: center;
+}
+.doctor-card .card-item:last-child {
+  border-block-start: none;
+  border-end-start-radius: var(--radius-6);
+  border-end-end-radius: var(--radius-6);
+}
+.doctor-card .card-item .icon-box {
+  color: var(--silver);
+  padding: 22px;
+  border-inline-end: 1px solid var(--cultured_20);
+}
+.doctor-card .card-item .span {
+  margin-inline: 15px;
+  padding-block: 5px;
+  word-break: break-all;
+}
 
 /* ===== #SAFETY ===== */
 
